@@ -143,6 +143,9 @@ class LocalClient:
             print(f'{index:03d}  {line}')
         if not self.game.result:
             print(self.result_text())
+    for seat in range(3):
+        cards = core.cards_text(self.game.hands[seat], True) or '无'
+        print(f'{self.names[seat]} 剩余手牌：{cards}')
 
 
 @dataclass(frozen=True)
