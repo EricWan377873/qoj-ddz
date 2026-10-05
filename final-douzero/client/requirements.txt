@@ -1,0 +1,10 @@
+# CPU-only PyTorch, including Windows ARM64; install with pip -r requirements.txt.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0+cpu
+numpy>=1.26,<3
+prompt_toolkit>=3.0.48,<4
+beautifulsoup4>=4.12,<5
+curl_cffi>=0.16.3,<0.17
+
+# Original browser fallback
+playwright>=1.51,<2
