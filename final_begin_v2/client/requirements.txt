@@ -1,0 +1,17 @@
+# final-v3-f5 base runtime: native CPU PyTorch on Windows x64/ARM64 and Linux.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0+cpu
+numpy>=1.26,<3
+prompt_toolkit>=3.0.48,<4
+beautifulsoup4>=4.12,<5
+curl_cffi>=0.16.3,<0.17
+playwright>=1.55,<2
+
+# Snapdragon X Elite / Windows ARM64 only.
+# These packages let train.py export the four fixed-shape actor networks and
+# execute self-play forward passes on the Hexagon NPU through QNN.
+onnx==1.23.1 ; sys_platform == "win32" and platform_machine == "ARM64"
+onnxruntime==1.27.0 ; sys_platform == "win32" and platform_machine == "ARM64"
+onnxruntime-qnn==2.6.0 ; sys_platform == "win32" and platform_machine == "ARM64"
+
+# QNN 2.6.0 官方测试组合：ONNX Runtime 1.27.0 + QAIRT 2.50.40。
