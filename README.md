@@ -9,6 +9,6 @@ final_begin 好像是 GPT 造了一个新的模型，但是参数规模很小，
 
 final_begin_v2 GPT 进行了一些优化，还在训练阶段加入了一些 NPU 优化，针对我的电脑特化的，所以可能在别的机器上训练更慢。**鉴定为目前没用。**
 
-final_ataraxos 还没造，找时间看看能不能接入。
+final_ataraxos 还没造，找时间看看能不能接入。目前状态：没找到模型文件，看起来没法用。
 
 每个版本训练有关的参数设置看分别的 README，qoj_cli.py 进去后 help 就能看在 qoj 上玩的使用方法。GPT 不会偷你 cookie，如果偷那我的 cookie 是第一个被偷的。
