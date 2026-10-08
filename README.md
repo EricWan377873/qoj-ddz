@@ -3,6 +3,8 @@ QOJ 斗地主 CLI 版本，还有接本地 AI 的
 
 所有东西都是 GPT 写的，本地进行测试过。
 
+根目录下的 qoj_cli.py 不带任何本地模型，推荐使用，直接下载使用即可。需要通过 `pip install curl_cffi beautifulsoup4 prompt_toolkit` 安装几个需要的库。
+
 final_douzero 是最初始版，我记得是用了 DouZero，但是 DouZero 用的规则毕竟和 qoj 不一样，虽然可能聪明一点。似乎还可以继续训练并微调。但是目前本地一人两机测试会出现巨大失误，不知道原因。
 
 final_begin 好像是 GPT 造了一个新的模型，但是参数规模很小，训练也不快，唯一好处是 DouZero 似乎只能看见最近很少几个牌，但是这个能看全了。**鉴定为没用。**
